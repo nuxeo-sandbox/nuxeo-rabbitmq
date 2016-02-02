@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<component name="org.nuxeo.rabbit.event.jmsListener" version="1.0">
+
+  <extension target="org.nuxeo.ecm.core.event.EventServiceComponent"
+             point="listener">
+    <listener name="rabbitMQ" async="true" priority="666" postCommit="true"
+              class="org.nuxeo.rabbit.RabbitMQEventForwarder">
+      <event>documentCreated</event>
+      <event>aboutToImport</event>
+      <event>documentImported</event>
+      <event>documentRemoved</event>
+      <event>aboutToRemoveVersion</event>
+      <event>versionRemoved</event>
+      <event>beforeDocumentModification</event>
+      <event>beforeDocumentSecurityModification</event>
+      <event>documentModified</event>
+      <event>documentSecurityUpdated</event>
+      <event>documentLocked</event>
+      <event>documentUnlocked</event>
+      <event>aboutToCopy</event>
+      <event>documentCreatedByCopy</event>
+      <event>documentDuplicated</event>
+      <event>aboutToMove</event>
+      <event>documentMoved</event>
+      <event>documentPublished</event>
+      <event>documentProxyPublished</event>
+      <event>documentProxyUpdated</event>
+      <event>sectionContentPublished</event>
+      <event>beforeRestoringDocument</event>
+      <event>documentRestored</event>
+    </listener>
+  </extension>
+
+</component>

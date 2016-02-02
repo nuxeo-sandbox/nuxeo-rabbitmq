@@ -1,0 +1,8 @@
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: .
+Manifest-Version: 1.0
+Bundle-Name: Nuxeo Rabbit
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ManifestVersion: 2
+Nuxeo-Component: OSGI-INF/rabbitlistener-contrib.xml
+Bundle-SymbolicName: org.nuxeo.rabbit;singleton:=true
